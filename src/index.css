@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 30 15% 7%;
+    --foreground: 35 30% 90%;
+
+    --card: 30 12% 12%;
+    --card-foreground: 35 30% 90%;
+
+    --popover: 30 12% 12%;
+    --popover-foreground: 35 30% 90%;
+
+    --primary: 25 70% 55%;
+    --primary-foreground: 30 15% 7%;
+
+    --secondary: 30 10% 18%;
+    --secondary-foreground: 35 30% 90%;
+
+    --muted: 30 8% 15%;
+    --muted-foreground: 30 15% 55%;
+
+    --accent: 25 70% 55%;
+    --accent-foreground: 30 15% 7%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 10% 20%;
+    --input: 30 10% 20%;
+    --ring: 25 70% 55%;
+
+    --radius: 0.5rem;
+
+    --copper: 25 70% 55%;
+    --copper-light: 30 60% 70%;
+    --copper-dark: 20 75% 35%;
+    --cream: 35 30% 90%;
+    --charcoal: 30 15% 7%;
+    --charcoal-light: 30 12% 12%;
+
+    --font-display: 'Playfair Display', serif;
+    --font-body: 'Inter', sans-serif;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .text-gradient-copper {
+    @apply bg-clip-text text-transparent;
+    background-image: linear-gradient(135deg, hsl(25 70% 55%), hsl(30 60% 70%));
+  }
+
+  .bg-gradient-copper {
+    background-image: linear-gradient(135deg, hsl(25 70% 55%), hsl(20 75% 35%));
+  }
+
+  .bg-gradient-hero {
+    background: linear-gradient(180deg, hsl(30 15% 7% / 0.3) 0%, hsl(30 15% 7% / 0.8) 100%);
+  }
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(30 15% 7%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(30 10% 20%);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(25 70% 55%);
+}
