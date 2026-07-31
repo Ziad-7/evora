@@ -31,7 +31,7 @@ const CartDrawer = () => {
     // === 👇 ENTER YOUR PHONE NUMBER HERE 👇 ===
     // Format: CountryCode + Number (No symbols, no +)
     // Example for Egypt: "2010xxxxxxxxx"
-    const phoneNumber = "201098708156"; 
+    const phoneNumber = "201050125489"; 
     // ==========================================
 
     const message = items
