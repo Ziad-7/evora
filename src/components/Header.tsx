@@ -22,8 +22,8 @@ const Header = () => {
     // CHANGE IS HERE: Added dir="ltr"
     // This forces the header to ALWAYS behave like English (Left-to-Right),
     // keeping the Logo on the left and Buttons on the right.
-    <header 
-      dir="ltr" 
+    <header
+      dir="ltr"
       className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border"
     >
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
